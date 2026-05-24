@@ -5,7 +5,7 @@ class Auth{
 	public static function auth(){
 		return (object)[
 			"name" => "Lorem",
-			"role" => "admin"
+			"role" => "CTR"
 		];
 	}
 

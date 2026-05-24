@@ -16,7 +16,8 @@ a {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	height: 100vh;
-	width: 100vw;
+	min-width: 100vw;
+	overflow: hidden;
 }
 
 #_wrapper {
@@ -26,6 +27,7 @@ body {
 	grid-template-columns: 15rem 1fr;
 	position: relative;
 	transition: all 0.2s ease;
+	position:sticky;
 }
 
 aside {
@@ -33,6 +35,7 @@ aside {
 	height: 100%;
 	background-color: #ccc;
 	transition: all 0.2s ease;
+	position: sticky;
 }
 
 #_main nav,
@@ -109,6 +112,7 @@ body:has(#_minimize-checkbox:checked) #_wrapper {
 body:has(#_minimize-checkbox:checked) a:has(p) p {
 	display: none;
 }
+
 
 @media screen and (max-width:600px) {
 	#_wrapper {
