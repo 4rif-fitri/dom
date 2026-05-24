@@ -5,6 +5,10 @@ require_once __DIR__ . '/../helpers/Mail.php';
 class User extends Controller
 {
 
+	public function desboard(){
+		view("/user/dashboard");
+	}
+
 	public function index()
 	{
 		// echo Auth::oauth("guest");
